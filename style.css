@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 3px black solid;
+  margin: 0;
+  padding: 20px;
+}
+
+ol {
+  border-right: 3px solid black;
+  width: 150px;
+  margin: 0;
+  padding: 20px;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+#menu ol {
+  padding-left: 45px;
+}
+
+#comment {
+  padding-left: 33px;
+}
+
+@media(max-width:800px) {
+  h1 {
+    border-bottom: none;
+  }
+
+  ol {
+    border-right: none;
+  }
+
+  #menu {
+    display: block;
+    padding-right: 33px;
+  }
+}
